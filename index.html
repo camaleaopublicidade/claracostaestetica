@@ -40,10 +40,17 @@
             font-family: "Inter", sans-serif;
         }
 
-        .mySlides {display:none;}
+        /* Transição suave */
+        .header-transition {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        
+
 
     </style>
 
+    
 
     <script type="application/ld+json">
         {
@@ -74,7 +81,7 @@
 <body id="scrollup" class="bg-gray-50" id="scrollup">
 
 
-    <header class="lg:py-3 py-3.5 lg:px-10 px-6.5 z-30 sticky top-0 absolute bg-white/90 bg-gradient-to-b from-white backdrop-blur-sm max-md:items-start justify-between max-md:flex-col max-md:gap-5">
+    <header class="lg:py-3 py-3.5 lg:px-10 px-6.5 z-30 sticky top-0 absolute bg-white/90 bg-gradient-to-b from-white backdrop-blur-sm max-md:items-start justify-between max-md:flex-col max-md:gap-5" id="mainHeader">
         <nav class="max-w-screen-xl mx-auto flex max-md:flex-col gap-6 items-center justify-between">
             <img src="./img/logo-claracosta-h.svg" alt="Logo Clara Costa - Massoterapeuta" class="h-6.5 max-md:hidden">
             <img src="./img/logo-claracosta-v.svg" alt="Logo Clara Costa - Massoterapeuta" class="h-18 lg:hidden">
@@ -157,8 +164,8 @@
 
             <div class="flex max-md:flex-col items-start justify-between lg:gap-4 xl:gap-8  gap-8 lg:mt-16 mt-10">
 
-             <!-- CARD -->
-             <div class="w-full text-white">
+               <!-- CARD -->
+               <div class="w-full text-white">
                 <div class="bg-[url('./img/drenagem-linfatica-corporal.jpg')] bg-cover bg-center h-80 hover:shadow-lg transition duration-600 rounded-md"></div>
 
                 <p class="font-semibold  lg:text-lg text-xl leading-tight mt-3 titulo">Drenagem Linfática Corporal</p>
@@ -617,6 +624,25 @@
         ● Estética Corporal e Facial em Jardim Cruzeiro / Salvador
     ● Estética Corporal e Facial em Vitória / Salvador</p>
 </section>
+
+<script>
+  let lastScroll = 0;
+  const header = document.getElementById("mainHeader");
+
+  window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset;
+
+    if (currentScroll > lastScroll && currentScroll > 100) {
+          // rolando para baixo
+      header.style.transform = "translateY(-100%)";
+  } else {
+          // rolando para cima
+      header.style.transform = "translateY(0)";
+  }
+
+  lastScroll = currentScroll;
+});
+</script>
 
 </body>
 </html>
