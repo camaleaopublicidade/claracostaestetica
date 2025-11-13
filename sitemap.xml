@@ -26,12 +26,6 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://claracostaestetica.com.br/bairros-salvador.html</loc>
-    <lastmod>2025-11-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://claracostaestetica.com.br/estetica-corporal-facial-acupe.html</loc>
     <lastmod>2025-11-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -1011,6 +1005,12 @@
   </url>
   <url>
     <loc>https://claracostaestetica.com.br/estetica-corporal-facial-vitoria.html</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+    <url>
+    <loc>https://claracostaestetica.com.br/bairros-salvador.html</loc>
     <lastmod>2025-11-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
